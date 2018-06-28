@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>eCarpool</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{background-color:#f5f5f5}
+</style>
+<link href="css/style2.css" rel="stylesheet" type="text/css">
+<link href="css/form.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+</head>
+
+<body>
+<div id="mainWrapper">
+  <header> 
+    <!-- This is the header content. It contains Logo and links -->
+    <div id="headerLinks"><a href="login.html" title="Login/Register">Login/Register</a><a href="#" title="Cart">Schedule (1)</a></div>
+  </header>
+  <section id="offer"> 
+    <!-- The offer section displays a banner text for promotions -->
+    <h2>Customise Your Route Here</h2>
+    <p>SHARED TRANSPORT EVERYWHERE</p>
+  </section>
+  <div id="content">
+    <section class="sidebar"> 
+      <!-- This adds a sidebar with 1 searchbox,2 menusets, each with 4 links -->
+      <input type="text"  id="search" value="search">
+      <div id="menubar">
+        <nav class="menu">
+          <h2><!-- Title for menuset 1 --><a href="HomePage.html">Home P<span style="color:green">a</span>ge</a></h2>
+          <hr><br />
+          <h2><!-- Title for menuset 1 -->Customisation</h2>
+          <hr>
+          <ul>
+            <!-- List of links under menuset 1 -->
+            <li><a href="#" title="Link">Have Vehicle</a></li>
+            <li><a href="#" title="Link">No Vehicle</a></li>
+            <li></li>
+            <li class="notimp"><!-- notimp class is applied to remove this link from the tablet and phone views --></li>
+          </ul>
+        </nav>
+</div>
+    </section>
+    <section class="mainContent">
+      <form action="/demo/demo_form.asp">
+        <input type="radio" checked="checked" name="Sex" value="male" />Have Vehicle (Release a new route but you need to register as our certified driver)<br><br>
+        
+        <input type="radio" checked="checked" name="Sex" value="male" />No Vehicle (Release the msg to find drivers)
+        
+        <br><br>
+        <label for="bt">Business Type</label>
+        <select id="btype" name="btype">
+    	<option value="">slected...</option>
+    	<option value="cargo">Cargo Transport/Move house...</option>
+    	<option value="people">Passengers pickup...</option>
+  		</select><br><br>
+       
+        <label for="fname">Route</label>
+        
+        &nbsp;
+        <input type="text" name="location" value="">
+        To
+  		<input type="text" name="destination" value="">
+  		<br><br>
+  		<form>
+  		Date<br>
+  		<input type="radio" checked="checked" name="data" value="ed" />Exact date
+   		<input type="datetime-local" placeholder="" />
+   		<input type="radio" name="data" value="fd" />Flexible date
+  		<br><br>
+       </form>
+        First name<br>
+  		<input type="text" name="firstname" value="">
+  		<br><br>
+        Last name<br>
+  		<input type="text" name="lastname" value="">
+        <br><br>
+        <textarea>Leave some extra masseges...</textarea>
+  		<input type="submit" value="Submit">
+      </form>
+  </section>
+  </div>
+  <footer> 
+    <!-- This is the footer with default 3 divs -->
+    <div>
+      <p>The web page is a basic version since we are the beginners of website building, we will enhance it in the future.</p>
+    </div>
+    <div>
+      <p align="center">Thanks for watching!!</p>
+    </div>
+    <div class="footerlinks">
+      <p><a href="#" title="Link"><img src="image/wechat.JPG"></a></p>
+      <p><a href="#" title="Link"><img src="image/facebook.JPG"></a></p>
+      <p><a href="#" title="Link"><img src="image/twitter.JPG"></a></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

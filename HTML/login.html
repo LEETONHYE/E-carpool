@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>eCarpool</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{background-color:#f5f5f5}
+</style>
+<link href="css/style3.css" rel="stylesheet" type="text/css">
+<link href="css/form2.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script type="text/javascript" src="js/myscript.js"></script>
+<script type="text/javascript" src="js/cookie.js"></script>
+</head>
+
+<body onLoad="checkCookie()">
+<div id="mainWrapper">
+  <header> 
+    <!-- This is the header content. It contains Logo and links -->
+    <div id="headerLinks"><a href="#" title="Login/Register">Register as a new member</a></div>
+  </header>
+  <section id="offer"> 
+    <!-- The offer section displays a banner text for promotions -->
+    <h2>E-Carpool</h2>
+    <p>SHARED TRANSPORT EVERYWHERE</p>
+  </section>
+  <div id="content">
+  	<form name="myform" action="foo" method="post" onsubmit="return validateForm();">
+	User Name:<br>
+	<input type="text" name="uname" id="uname">
+	<br>
+	Password:<br>
+	<input type="password" name="pw" id="pw">
+	<br><br>
+	<input type="submit" value="Login">
+	</form>
+  </div>
+  <footer> 
+    <!-- This is the footer with default 3 divs -->
+    <div>
+      <p>The web page is a basic version since we are the beginners of website building, we will enhance it in the future.</p>
+    </div>
+    <div>
+      <p align="center">Thanks for watching!!</p>
+    </div>
+    <div class="footerlinks">
+      <p><a href="#" title="Link"><img src="image/wechat.JPG"></a></p>
+      <p><a href="#" title="Link"><img src="image/facebook.JPG"></a></p>
+      <p><a href="#" title="Link"><img src="image/twitter.JPG"></a></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
